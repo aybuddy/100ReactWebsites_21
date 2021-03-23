@@ -2,6 +2,7 @@ import { Avatar } from '@material-ui/core';
 import { Apps } from '@material-ui/icons';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Search from '../components/Search';
 import './Home.css';
 
 const Home = () => {
@@ -19,7 +20,15 @@ const Home = () => {
           <Avatar />
         </div>
       </div>
-      <div className='home__body'></div>
+      <div className='home__body'>
+        <img
+          src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'
+          alt=''
+        />
+        <div className='home__inputContainer'>
+          <Search hideButtons />
+        </div>
+      </div>
     </div>
   );
 };
